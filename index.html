@@ -2,46 +2,27 @@
 <html ng-app="cameraApp">
   <head>
     <meta charset="utf-8">
-    <title>Camera View</title>
-    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>- camera +</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+
+    <script defer src="js/jquery-2.1.4.min.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.js"></script>
+    <script defer src="js/materialize.min.js"></script>
+    <script defer src="js/components.js"></script>
+    <script defer src="js/app.js"></script>
   </head>
-  <body ng-init="cameras = [{id: 1,name: 'Nikon D3100 DSLR',image: 'http://ecx.images-amazon.com/images/I/713u2gDQqML._SX522_.jpg',rating: 4,price: 369.99,onSale: true},{id: 2,name: 'Canon EOS 70D',image: 'http://ecx.images-amazon.com/images/I/81U00AkAUWL._SX522_.jpg',rating: 2,price: 1099.0,onSale: false},{id: 3,name: 'Nikon D810A',image:'http://ecx.images-amazon.com/images/I/91wtXIfLl2L._SX522_.jpg',rating: 3,price: 3796.95,onSale: true}]">
-    <div class="container">
+  <body>
       <header>
-        <h1>Camera Shop</h1>
+        <h1>- camera +</h1>
       </header>
       <main>
-        <div class="row">
-          <div class="col s12 m8">
-            <div class="row">
-              <div class="col s8 input-field">
-                <input type="text" placeholder="Search here">
-              </div>
-              <div class="col s4 input-field">
-                <select>
-                  <option value="name">Name</option>
-                  <option value="rating">Rating</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="card blue-grey">
-              <div class="card-content white-text">
-                <span class="card-title">Your Cart</span>
-              </div>
-              <div class="card-action">
-                <a href="#">Checkout</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <cameras></cameras>
       </main>
-    </div>
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.js"></script>
-    <script src="js/materialize.min.js"></script>
-    <script src="js/app.js"></script>
   </body>
 </html>
